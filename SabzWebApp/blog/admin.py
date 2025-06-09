@@ -9,7 +9,7 @@ class PostAdmin(admin.ModelAdmin):
     list_filter = ['publish','status','author']
     search_fields = ['title','description']
     row_id_fields =['author']
-    date_hierarchy = ['puhblish']
-    prepopulated_fields = {'slug': ['title']}
-    list_editable = ['status']
-    # list_display_links = ['author']
+    date_hierarchy = 'publish'
+    # prepopulated_fields = {'slug': ['title']}
+    # list_editable = ['status']
+#     list_display_links = ['author']
